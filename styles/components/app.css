@@ -1,0 +1,110 @@
+.app {
+  background-color: var(--clr-card-dark-blue);
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-radius: 16px;
+}
+
+.app__info > * {
+  /* margin: 1rem 0; */
+  margin-bottom: 1rem;
+}
+
+.app__info-equilibrium {
+  border-radius: 8px;
+}
+
+.app__info-equilibrium-wrapper {
+  position: relative;
+}
+
+.app__info-equilibrium-wrapper:hover::after {
+  content: url("/icon-view.svg");
+  background-color: var(--clr-cyan-transparent);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.app__info-title {
+  color: var(--clr-white);
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.app__info-description {
+  color: var(--clr-soft-blue);
+  margin-top: 1rem;
+}
+
+.app__price > * {
+  margin-bottom: 1rem;
+}
+
+.app__price {
+  display: flex;
+  width: 100%;
+}
+
+.app__price-start {
+  display: flex;
+  justify-content: start;
+  gap: 0.5rem;
+  flex: 1;
+}
+
+.app__price-start-ethereum {
+  height: 90%;
+  align-self: center;
+}
+
+.app__price-start-amount {
+  color: var(--clr-cyan);
+}
+
+.app__price-end {
+  display: flex;
+  justify-content: end;
+  gap: 0.5rem;
+  flex: 1;
+}
+
+.app__price-end-clock {
+  height: 90%;
+  align-self: center;
+}
+
+.app__price-end-time {
+  color: var(--clr-soft-blue);
+}
+
+.app__line {
+  margin-bottom: 1rem;
+  border: 1px solid var(--clr-line-dark-blue);
+}
+
+.app__author {
+  display: flex;
+  gap: 0.8rem;
+}
+
+.app__author-avatar {
+  width: 10%;
+  height: 10%;
+  border: 1px solid var(--clr-white);
+  border-radius: 32px;
+}
+
+.app__author-name {
+  align-self: center;
+  color: var(--clr-soft-blue);
+}
